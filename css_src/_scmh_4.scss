@@ -1,0 +1,117 @@
+.contact{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:url("../images/scmh_4/sleep-music-673627-unsplash.jpg")no-repeat center;
+    background-size:cover;
+    -webkit-background-size:cover;
+    display:table;
+
+    &-wrap{
+        display:table-cell;
+        vertical-align:middle;
+        text-align: center;
+    }
+
+    &-title{
+        display:inline-block;
+        font-size:60px;
+        color:#fff;
+        letter-spacing:20px;
+        opacity:0;
+        font-family:'Roboto', sans-serif;
+        animation:_text-animation 3s forwards alternate;
+        -webkit-animation:_text-animation 3s forwards alternate; /* Safari 4.0 - 8.0 */
+
+        @keyframes _text-animation {
+            0%{
+                opacity:0;
+                transform:translateY(-20px);
+                -webkit-transform:translateY(-20px);
+                -moz-transform:translateY(-20px);
+            }
+            100%{
+                opacity:1;
+                transform:translateY(0);
+                -webkit-transform:translateY(0);
+                -moz-transform:translateY(0);
+            }
+        }
+    }
+
+    &-heading{
+        margin-top:50px;
+        font-size:20px;
+        color:#fff;
+        line-height:2;
+        opacity:0;
+        animation:_text-animation2 3s forwards alternate;
+        animation-delay:1s;
+        -webkit-animation:_text-animation2 3s forwards alternate; /* Safari 4.0 - 8.0 */
+        -webkit-animation-delay:1s; /* Safari 4.0 - 8.0 */
+
+        @keyframes _text-animation2 {
+            0%{
+                opacity:0;
+                transform:translateY(-20px);
+                -webkit-transform:translateY(-20px);
+                -moz-transform:translateY(-20px);
+            }
+            100%{
+                opacity:0.8;
+                transform:translateY(0);
+                -webkit-transform:translateY(0);
+                -moz-transform:translateY(0);
+            }
+        }
+    }
+
+    &-text{
+        margin-top:50px;
+        color:#fff;
+        opacity:0;
+        animation:_text-animation3 3s forwards alternate;
+        animation-delay:2s;
+        -webkit-animation:_text-animation3 3s forwards alternate; /* Safari 4.0 - 8.0 */
+        -webkit-animation-delay:2s; /* Safari 4.0 - 8.0 */
+
+        & span{
+            margin:0 20px;
+            letter-spacing:2px;
+            font-weight:300;
+            font-family:'Roboto', sans-serif;
+            position:relative;
+
+            &:last-child{
+
+                &:after{
+                    content:'\2022';
+                    color:#fff;
+                    position: absolute;
+                    top:2px;
+                    left:-22px;
+                }
+
+            }
+
+        }
+
+        @keyframes _text-animation3 {
+            0%{
+                opacity:0;
+                transform:translateY(-20px);
+                -webkit-transform:translateY(-20px);
+                -moz-transform:translateY(-20px);
+            }
+            100%{
+                opacity:1;
+                transform:translateY(0);
+                -webkit-transform:translateY(0);
+                -moz-transform:translateY(0);
+            }
+        }
+    }
+
+}
